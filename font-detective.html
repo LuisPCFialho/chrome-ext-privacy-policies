@@ -1,21 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy — FontDetective</title>
-<style>body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;max-width:700px;margin:40px auto;padding:0 20px;color:#1e293b;line-height:1.7}h1{color:#f59e0b}h2{color:#334155;margin-top:2em}a{color:#f59e0b}</style></head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — FontDetective</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; color: #1a1a2e; background: #f8f9fa; padding: 2rem 1rem; }
+        .container { max-width: 720px; margin: 0 auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); padding: 3rem 2.5rem; }
+        h1 { font-size: 1.75rem; color: #16213e; margin-bottom: 0.25rem; }
+        .subtitle { font-size: 1rem; color: #6c757d; margin-bottom: 2rem; }
+        h2 { font-size: 1.15rem; color: #0f3460; margin-top: 2rem; margin-bottom: 0.5rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.3rem; }
+        p, li { font-size: 0.95rem; color: #333; }
+        ul { padding-left: 1.25rem; margin-top: 0.4rem; }
+        li { margin-bottom: 0.35rem; }
+        .effective { font-size: 0.85rem; color: #6c757d; margin-top: 2.5rem; text-align: center; }
+        a { color: #0f3460; }
+        .badge { display: inline-block; background: #d4edda; color: #155724; font-size: 0.8rem; font-weight: 600; padding: 0.2rem 0.6rem; border-radius: 4px; margin-bottom: 1.5rem; }
+    </style>
+</head>
 <body>
-<h1>Privacy Policy — FontDetective</h1>
-<p><strong>Last updated:</strong> March 2026 &nbsp;|&nbsp; <strong>Developer:</strong> LuisPCFialho</p>
-<h2>1. Overview</h2>
-<p>FontDetective identifies fonts used on webpages. All font detection is done locally by reading computed CSS styles — no data is sent to external servers.</p>
-<h2>2. Data We Collect</h2>
-<p>Stored locally only: your inspection history (last 10 elements) and your settings. Font names are not stored unless you export them.</p>
-<h2>3. Permissions Explained</h2>
-<ul>
-  <li><strong>activeTab / scripting</strong> — reads computed font styles from the current page</li>
-  <li><strong>storage</strong> — saves inspection history and settings locally</li>
-  <li><strong>clipboardWrite</strong> — copies CSS snippets when you click Copy</li>
-  <li><strong>contextMenus</strong> — adds "Inspect font here" to the right-click menu</li>
-</ul>
-<h2>4. Data Sharing</h2><p>No data is shared with third parties.</p>
-<h2>5. Contact</h2><p><a href="https://github.com/LuisPCFialho/chrome-ext-font-detective" target="_blank">GitHub</a></p>
-</body></html>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">FontDetective — Chrome Extension</p>
+        <span class="badge">No personal data collected</span>
+
+        <h2>1. Data Collection</h2>
+        <p><strong>FontDetective</strong> does not collect, transmit, or store any personal data. The extension does not gather browsing history, form inputs, credentials, analytics, or any other personally identifiable information.</p>
+
+        <h2>2. Data Storage</h2>
+        <p>All user preferences and extension data are stored locally on your device using the <code>chrome.storage</code> API. This data never leaves your browser and is not accessible to the publisher or any third party.</p>
+
+        <h2>3. External Communication</h2>
+        <p>The extension makes a single outbound HTTPS request to <code>api.lemonsqueezy.com</code> solely for the purpose of license key validation. This request contains only the license key you provide and does not include any personal or browsing data.</p>
+
+        <h2>4. Permissions Used</h2>
+        <p>The extension requests only the minimum browser permissions necessary for its core functionality. No permissions are used to monitor, collect, or transmit personal data. Specific permissions and their justifications are detailed on the Chrome Web Store listing page.</p>
+
+        <h2>5. Third-Party Services</h2>
+        <ul>
+            <li><strong>Lemon Squeezy</strong> (<a href="https://www.lemonsqueezy.com/privacy" target="_blank" rel="noopener">privacy policy</a>) — used exclusively for license validation. No personal data is shared with this service beyond the license key.</li>
+        </ul>
+        <p>No other third-party services, analytics platforms, advertising networks, or tracking tools are used.</p>
+
+        <h2>6. Changes to This Policy</h2>
+        <p>This privacy policy may be updated from time to time. Any changes will be reflected on this page with a revised effective date. Continued use of the extension after changes are posted constitutes acceptance of the updated policy.</p>
+
+        <h2>7. Contact</h2>
+        <p>If you have questions or concerns about this privacy policy or the extension, please contact:</p>
+        <ul>
+            <li><strong>Publisher:</strong> BananaWare (Lu&iacute;s Fialho)</li>
+            <li><strong>Email:</strong> <a href="mailto:luispcfialho@gmail.com">luispcfialho@gmail.com</a></li>
+        </ul>
+
+        <p class="effective">Effective date: April 15, 2026</p>
+    </div>
+</body>
+</html>
